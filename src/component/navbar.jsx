@@ -15,7 +15,7 @@ function NavBar() {
                     {/* <Link to="/allsiding" className={styles.nt} >Siding List</Link> */}
                     <Link to="/myprofile" className={styles.nt} >Profile </Link>
                     <Link to="/req" className={styles.nt}>Request</Link>
-                    <Link to="/login" className={styles.nt}>Login</Link>
+                    
                 </div>
 
 

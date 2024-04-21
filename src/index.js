@@ -8,12 +8,23 @@ import {
   Link,
 } from "react-router-dom";
 import HomePage from './pages/homepage';
+import ProfilePage from './pages/profilepage';
+import Login from './pages/login';
 const router =createBrowserRouter([
   {
     path:'/',
-    element :<HomePage></HomePage>
+    element :<Login></Login>
 
+  },
+  {
+    path:'/myprofile',
+    element:<ProfilePage></ProfilePage>
+  },
+  {
+    path:'/home',
+    element:<HomePage/>
   }
+
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
