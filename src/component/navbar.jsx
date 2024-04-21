@@ -20,7 +20,7 @@ function NavBar() {
                 <div className={styles.sep}>
                     {/* <Link to="/allsiding" className={styles.nt} >Siding List</Link> */}
                     <Link to="/myprofile" className={styles.nt} >Profile </Link>
-                    <Link to="/req" className={styles.nt}>Request</Link>
+                    <Link to="/request" className={styles.nt}>Request</Link>
                     <Link  className={styles.nt} onClick={Logout}>Logout</Link>
 
                     

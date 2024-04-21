@@ -10,6 +10,7 @@ import {
 import HomePage from './pages/homepage';
 import ProfilePage from './pages/profilepage';
 import Login from './pages/login';
+import GetRequests from './pages/getrequest';
 const router =createBrowserRouter([
   {
     path:'/',
@@ -23,6 +24,10 @@ const router =createBrowserRouter([
   {
     path:'/home',
     element:<HomePage/>
+  },
+  {
+    path:'/request',
+    element:<GetRequests/>
   }
 
 ])
