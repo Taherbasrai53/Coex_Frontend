@@ -9,7 +9,7 @@ function ProfilePage(){
     const [token,setToken]=useState("");
     const [inventory,setInventory]=useState("");
 useEffect(()=>{
-setSiding(localStorage.getItem('siding'));
+setSiding(JSON.parse(localStorage.getItem('siding')));
 setToken(localStorage.getItem('token'));
 },[]);    
 function submit(event){
@@ -31,6 +31,7 @@ function submit(event){
         console.log(err);
     })
 }
+useEffect(()=>{},[]);
 return <>
 <img src={bgimg} className={styles.bgimg} ></img>
 <NavBar></NavBar>

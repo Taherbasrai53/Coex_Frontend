@@ -27,7 +27,7 @@ function Login() {
       const token = data.token;
       
       localStorage.setItem('token',"Bearer "+ token);
-      localStorage.setItem('siding',data.siding);
+      localStorage.setItem('siding',JSON.stringify(data.siding));
       navigate("/home");
 
        }else{
