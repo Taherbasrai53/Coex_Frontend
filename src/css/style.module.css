@@ -1,0 +1,266 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bgimg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.NavbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: white;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.RightNav {
+  display: flex;
+  gap: 50px;
+  justify-content: auto;
+  align-items: center;
+}
+
+.sep {
+  font-size: 1.2em;
+  display: flex;
+  justify-content: space-arounda;
+  margin-right: 100px;
+}
+
+.RightNav h4 {
+  margin: 25px;
+  font: 1.2em "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.LeftNav {
+  img {
+    width: 155px;
+    height: auto;
+    display: grid;
+    place-items: center;
+    margin: 40px;
+  }
+}
+
+#coexlogo {
+  position: relative;
+  height: 90px;
+}
+
+.work {
+  position: relative;
+  top: 800px;
+  text-align: center; 
+}
+.work h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.meet {
+  height: 600px;
+  margin: 0;
+  position: relative;
+  top: 780px;
+  text-align: center;
+}
+.meet h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.contact {
+  display: flex;
+  position: relative;
+  top: 750px;
+  background-color: #F4D764;
+  gap: 55%;
+  font-size: 25px;
+}
+
+.rightcon {
+  padding-top: 2.5%;
+  width: 40%;
+  display: flex;
+  gap: 7%;
+}
+
+.wrapper {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.inputbox {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.rememberforgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carocont {
+  display: flex;
+  justify-self: center;
+}
+
+.caroimg {
+  overflow: hidden;
+  display: flex;
+  margin-top: 20px;
+}
+
+.image {
+  height: 300px;
+  width: 350px;
+}
+
+.nt {
+  color: black;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+.nt:hover {
+  text-decoration: underline;
+  transition-delay: 100ms;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+.ct {
+  color: black;
+  text-decoration: none;
+}
+
+.ct:hover {
+  text-decoration: underline;
+}
+
+
+.card {
+  text-align: center;
+  border: 2px solid rgba(2, 2, 2, 0.676);
+}
+
+.image {
+
+  border-radius: 30%;
+  margin-bottom: 8px;
+  /* Spacing between image and name */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.coursename {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.year {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.arrowright {
+  size: 50%;
+}
+
+.text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:54px;
+  position: absolute;
+  left: 5%;
+  top: 28%;
+  color: black;
+  opacity: .9;
+}
+.paragraph{
+  position: absolute;
+  left: 5%;
+  top: 36%;
+  font-size: 20px;
+  color:white;
+}
+.box{
+  background-color: #000;
+  opacity: 0.9;
+  height: 340px;
+  width: 690px;
+  position: absolute;
+  left: 4%;
+  top: 42%;
+  font-size: 18px;
+
+  border-radius: 5%;
+  background-color: #c1c1c1;
+  box-shadow: 20px 20px 60px #00000041, -20px -20px 60px #ffffff40;
+}
+.box1{
+  background-color: #000;
+  opacity: 0.9;
+  height: 340px;
+  width: 690px;
+  position: absolute;
+  left: 4%;
+  top: 42%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: #c1c1c1;
+  box-shadow: 20px 20px 60px #00000041, -20px -20px 60px #ffffff40;
+}
+
+.ministryimg{
+  position: absolute;
+  left: 44%;
+  top: 27%;
+  /* opacity: 0.9; */
+  height: 70px;
+}
+.search{
+ padding-top: 5.5%;
+ width: 60%;
+ margin-left: 15%;
+}
+.searchbox{
+  display: flex;
+}
