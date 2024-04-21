@@ -34,15 +34,16 @@ function submit(event){
 return <>
 <img src={bgimg} className={styles.bgimg} ></img>
 <NavBar></NavBar>
-<div>
-<h3>{siding.sidingCode}</h3>
-<h3>{siding.name}</h3>
-<h3>{siding.division}</h3>
-<h3>{siding.station}</h3>
-<h3>{siding.state}</h3>
-<h3>{siding.nomines}</h3>
-<input value={siding.inventory} onChange={(e)=>setInventory(e.target.value)}></input>
-<h3>{siding.availablerake}</h3>
+<div className={styles.details}>
+    <h1>Profile </h1>
+<h3>Siding code {}</h3>
+<h3>Siding name {}</h3>
+<h3>Division {}</h3>
+<h3>Station {}</h3>
+<h3>Number of Mines {}</h3>
+<label>Inventory</label>
+<input placeholder="" onChange={(e)=>{setInventory(e.target.value)}}></input>
+<h3>Zone {}</h3>
 <button onClick={submit}>Submit</button>
     </div>
 

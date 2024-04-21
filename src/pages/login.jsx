@@ -28,7 +28,7 @@ function Login() {
       
       localStorage.setItem('token',"Bearer "+ token);
       localStorage.setItem('siding',data.siding);
-      navigate("/");
+      navigate("/home");
 
        }else{
         alert("wrong password");
