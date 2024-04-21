@@ -6,8 +6,8 @@ import bgimg from '../resources/train.jpeg.jpg';
 import htw from '../resources/htw.png';
 import Contact from "../component/contact";
 function HomePage(){
-    return <>
-          <img src={bgimg} className={styles.bgimg} ></img>
+    return <div className={styles.ProfilePage}>
+          
 <NavBar></NavBar>
 <div>
             <div className={styles.box}></div>
@@ -27,6 +27,6 @@ In essence, COeX emerges as a robust and adaptable application, revolutionizing 
 <img src={htw}></img>
     </div>
     <Contact></Contact>
-    </>
+    </div>
 }
 export default HomePage;

@@ -14,14 +14,14 @@ setToken(localStorage.getItem('token'));
 },[]);    
 function submit(event){
     event.preventDefault();
-    fetch("",{
-        method:"UPDATE",
+    fetch("https://localhost:7054/api/Sidings/UpdateInventory",{
+        method:"PUT",
         headers:{
-            'application-type':"application/json",
+            'content-type':"application/json",
             "Accept":"application/json",
             "Authorization":`${token}`
         },
-        body:JSON.stringify({inventory})
+        body:JSON.stringify({"Inventory": inventory})
     }).then(res=>res.json).then((data)=>{
         if(data.success){
             setSiding(data.siding);
@@ -31,23 +31,25 @@ function submit(event){
         console.log(err);
     })
 }
-useEffect(()=>{},[]);
-return <>
-<img src={bgimg} className={styles.bgimg} ></img>
+
+
+
+return <div className={styles.ProfilePage}>
+
 <NavBar></NavBar>
 <div className={styles.details}>
     <h1>Profile </h1>
-<h3>Siding code {}</h3>
-<h3>Siding name {}</h3>
-<h3>Division {}</h3>
-<h3>Station {}</h3>
-<h3>Number of Mines {}</h3>
-<label>Inventory</label>
-<input placeholder="" onChange={(e)=>{setInventory(e.target.value)}}></input>
-<h3>Zone {}</h3>
+<h3>Siding code: {siding.sidingCode}</h3>
+<h3>Siding name: {siding.name}</h3>
+<h3>Division: {siding.division}</h3>
+<h3>Station: {siding.station}</h3>
+<h3>Number of Mines: {siding.numMines}</h3>
+<label>Inventory: </label>
+<input placeholder={siding.inventory} onChange={(e)=>{setInventory(e.target.value)}}></input>
+<h3>Zone: {siding.zone}</h3>
 <button onClick={submit}>Submit</button>
     </div>
 
-</>
+</div>
 }
 export default ProfilePage;

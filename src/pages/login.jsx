@@ -15,7 +15,7 @@ function Login() {
     event.preventDefault();
     // var data = new FormData();
     // data.append("sidingId",sidingId);
-    fetch('https://localhost:7278/api/Users/loginSiding', {
+    fetch('https://localhost:7054/api/User/SidingLogin', {
         method: 'POST',
         body: JSON.stringify({sidingId,userName, password}),
         headers:{

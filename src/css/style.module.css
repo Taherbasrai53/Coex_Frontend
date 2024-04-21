@@ -5,14 +5,26 @@
 }
 
 .bgimg {
+  background-image: src('../resources/train.jpeg.jpg');
   position: absolute;
   z-index: -1;
   width: 100%;
   height: 100%;
+  background-repeat:repeat;
 }
+
+.ProfilePage
+{
+  background-image: url('../resources/train.jpeg.jpg'); 
+  overflow:visible;
+  background-size: 1300px;
+  background-repeat:no-repeat;
+}
+
 
 .NavbarContainer {
   display: flex;
+  position: sticky;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
@@ -64,11 +76,15 @@
 
 .work {
   position: relative;
-  top: 800px;
+  top: 850px;
   text-align: center; 
+
 }
 .work h1{
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.work img{
+  width:95%;
 }
 
 .meet {
@@ -85,7 +101,7 @@
 .contact {
   display: flex;
   position: relative;
-  top: 750px;
+  top: 850px;
   background-color: #F4D764;
   gap: 55%;
   font-size: 25px;
@@ -249,7 +265,7 @@
 
 .ministryimg{
   position: absolute;
-  left: 44%;
+  left: 53%;
   top: 27%;
   /* opacity: 0.9; */
   height: 70px;
@@ -264,19 +280,19 @@
 }
 .details{
 
+  align-items: center;
   margin-top: 2%;
-  margin-left: 30%;
-  width: 40%;
-  height: 80vh;
+  margin-left: 25%;
+  width: 50%;
   background-color: rgba(128, 128, 128, 0.7);
 }
 .details h1{
   text-align: center;
+
 }
 .details h3{
   font-size: 25px;
   padding: 2%;
-  width: 50%;
   margin: 2%;
 }
 .details label{
