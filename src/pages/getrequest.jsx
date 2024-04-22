@@ -48,10 +48,8 @@ function GetRequests() {
   //   navigate("/updatereq?id=" + String(id));
   // }
 function update(s){
-  console.log(s)
 navigate(`/updateRequest/${s}`)
 }
-
   return (
     <div>
 <NavBar></NavBar>
@@ -59,7 +57,7 @@ navigate(`/updateRequest/${s}`)
       <h2>Request Page</h2>
       <table className={styles.sidingdata}>
         <thead>
-          <tr onClick={()=>{update("s")}}> 
+          <tr>
             <th>S.No</th>
             <th>Siding ID</th>
             <th>Coal Stock</th>
@@ -73,7 +71,7 @@ navigate(`/updateRequest/${s}`)
         </thead>
         <tbody>
           {users.map((item, idx) => (
-            <tr  onClick={()=>update(item.id)} key={idx} >
+            <tr onClick={()=>{update(item.Id)}} key={idx}>
               <td>{idx}</td>
               <td>{item.sidingId}</td>
               <td>{item.frieghtAmount}</td>

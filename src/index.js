@@ -13,6 +13,8 @@ import Login from './pages/login';
 import GetRequests from './pages/getrequest';
 import AddRequest from './pages/addRequest';
 import UpdateRequest from './pages/updaterequest';
+import AllSiding from './pages/allsiding';
+import Notifications from './pages/notification';
 import AdminLogin from './pages/adminlogin';
 const router =createBrowserRouter([
   {
@@ -41,6 +43,14 @@ const router =createBrowserRouter([
     element:<UpdateRequest/>
   },
   {
+    path:'/allsiding',
+    element:<AllSiding/>
+  },
+  {
+    path:'/activity/:id',
+    element:<Notifications/>
+  },
+    {
     path:'/adminLogin',
     element:<AdminLogin/>
   }
