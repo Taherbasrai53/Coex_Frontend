@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from 'react-router-dom';
 import styles from '../css/login.module.css';
 
-function Login() {
+function AdminLogin() {
   const [userName, setId] = useState("");
   const [password, setPassword] = useState("");
-  const [sidingId, setCluster] = useState("");
+
   // const [passcode, setPasscode] = useState("");
   const navigate = useNavigate();
 
@@ -15,9 +15,9 @@ function Login() {
     event.preventDefault();
     // var data = new FormData();
     // data.append("sidingId",sidingId);
-    fetch('https://localhost:7054/api/User/SidingLogin', {
+    fetch('https://localhost:7054/api/User/AdminLogin', {
         method: 'POST',
-        body: JSON.stringify({sidingId,userName, password}),
+        body: JSON.stringify({userName, password}),
         headers:{
             'Content-Type': 'application/json'
         }
@@ -27,24 +27,22 @@ function Login() {
       const token = data.token;
       
       localStorage.setItem('token',"Bearer "+ token);
-      localStorage.setItem('siding',JSON.stringify(data.siding));
-      navigate("/home");
+      
+      navigate("/");
 
        }else{
         alert("wrong password");
        }
-              
+      
+        
     })}
  
   return (
     <div className={styles.Body}>
       <div className={styles.wrapper}>
         <form onSubmit={submit}>
-          <h1>Login</h1>
-          <div className={styles.inputbox}>
-            <input onChange={(e) => setCluster(e.target.value)} type="text" placeholder="Cluster Id" required />
-            <i className="bx bxsuser"></i>
-          </div>
+          <h1>Admin Login</h1>
+          
           {/* <div className={styles.inputbox}>
             <input onChange={(e) => setPasscode(e.target.value)} type="text" placeholder="Passcode" required />
             <i className="bx bxsuser"></i>
@@ -68,7 +66,7 @@ function Login() {
           </button>
           <div className={styles.registerlink}>
             <p>
-              <Link to='/adminLogin'>login as admin</Link>
+            <Link to='/'>login as siding</Link>
             </p>
           </div>
         </form>
@@ -77,4 +75,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default AdminLogin;
