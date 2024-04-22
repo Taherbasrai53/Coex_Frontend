@@ -13,6 +13,7 @@ import Login from './pages/login';
 import GetRequests from './pages/getrequest';
 import AddRequest from './pages/addRequest';
 import UpdateRequest from './pages/updaterequest';
+import AdminLogin from './pages/adminlogin';
 const router =createBrowserRouter([
   {
     path:'/',
@@ -38,6 +39,10 @@ const router =createBrowserRouter([
   {
     path:'/updateRequest/:id',
     element:<UpdateRequest/>
+  },
+  {
+    path:'/adminLogin',
+    element:<AdminLogin/>
   }
 
 ])
