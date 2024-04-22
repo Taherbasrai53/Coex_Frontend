@@ -5,21 +5,20 @@ import style from '../css/addrequest.module.css';
 import { useParams } from "react-router-dom";
 function UpdateRequest(){
     let {id}=useParams()
-    // const [list,setList]=useState([]);
+     const [list,setList]=useState([]);
     
     function fetchData(){
         const token=localStorage.getItem("token");
-        fetch("",{
-            method:"POST",
+        fetch(`https://localhost:7054/api/Requests/GetById?id=${id}`,{
+            method:"GET",
             headers:{
                 'Content-Type':"application/json",
                 "Accept":"application/json",
                 "Authorization":`${token}`
-            },
-            body:JSON.stringify({id}),
+            }            
         }).then(res=>res.json()).then(data=>{
-            if(data.success){
-// setList(data.list);
+            if(data){
+             setList(data);
             }
         }).catch(err=>{
             console.log(err);
@@ -36,7 +35,7 @@ return <div>
       <div className={style.App}>
         <h1 className={style.h1}> Request System</h1>
         
-        <UpdateForm ></UpdateForm>
+        <UpdateForm list={list}></UpdateForm>
       </div>
     </div>
     
