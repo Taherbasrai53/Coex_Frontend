@@ -1,0 +1,31 @@
+/* Assuming you have defined styles for your components */
+
+.map {
+  margin: 20px;
+}
+
+.sidingdata {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px; /* Added margin-top for separation */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box-shadow for a subtle lift */
+}
+
+.sidingdata th,
+.sidingdata td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Increased padding for better spacing */
+  text-align: left;
+}
+
+.sidingdata th {
+  background-color: #f2f2f2;
+}
+
+.sidingdata tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sidingdata tr:hover {
+  background-color: #f5f5f5;
+}

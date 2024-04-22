@@ -1,0 +1,36 @@
+/* AdminPage.module.css */
+
+.Notification {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center-align the content */
+  }
+  
+  .Notification table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .Notification th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+ .Notification th {
+    background-color: #f2f2f2;
+  }
+  
+ .Notification th.request-type1 {
+    background-color: red;
+  }
+  
+  .Notification th.request-type2 {
+    background-color: green;
+  }
+  
+  .Notification th.request-type3 {
+    background-color: blue;
+  }
