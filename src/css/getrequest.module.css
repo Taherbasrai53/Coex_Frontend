@@ -1,6 +1,6 @@
 
 .map {
-  
+
     padding: 20px;
   }
   
@@ -24,4 +24,10 @@
 .sidingdata tbody tr:hover {
     background-color: #f5f5f5;
     cursor: pointer;
+  }
+
+  #add-button{
+    position:absolute;
+    bottom: 300px;
+    right: 500px;
   }

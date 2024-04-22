@@ -11,6 +11,7 @@ import HomePage from './pages/homepage';
 import ProfilePage from './pages/profilepage';
 import Login from './pages/login';
 import GetRequests from './pages/getrequest';
+import AddRequest from './pages/addRequest';
 const router =createBrowserRouter([
   {
     path:'/',
@@ -28,6 +29,10 @@ const router =createBrowserRouter([
   {
     path:'/request',
     element:<GetRequests/>
+  },
+  {
+    path:'/addRequest',
+    element:<AddRequest/>
   }
 
 ])

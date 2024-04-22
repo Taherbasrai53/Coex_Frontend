@@ -24,7 +24,7 @@ In essence, COeX emerges as a robust and adaptable application, revolutionizing 
         <h1>
     How Things Work
         </h1>
-<img src={htw}></img>
+<img src={htw} ></img>
     </div>
     <Contact></Contact>
     </div>

@@ -22,10 +22,10 @@ function submit(event){
             "Authorization":`${token}`
         },
         body:JSON.stringify({"Inventory": inventory})
-    }).then(res=>res.json).then((data)=>{
-        if(data.success){
-            setSiding(data.siding);
-            localStorage.setItem('siding',data.siding);
+    }).then(res=>res.json()).then((data)=>{
+        if(data){
+            setSiding(data);
+            localStorage.setItem('siding',JSON.stringify(data));
         }
     }).catch(err=>{
         console.log(err);

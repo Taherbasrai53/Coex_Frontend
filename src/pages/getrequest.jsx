@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router";
 import styles from '../css/getrequest.module.css';
 import NavBar from '../component/navbar';
-const url = "https://localhost:7278/api/Requests/GetAll";
+//import '../../node_modules/boostrap/dist/css/bootstrap.min.css';
+
+const url = "https://localhost:7054/api/Requests/GetMyRequests";
 
 function GetRequests() {
 
@@ -11,6 +13,10 @@ function GetRequests() {
   const [ur, setUrl] = useState("");
   const navigate = useNavigate();
   
+  function submit(e){
+    e.preventDefault()
+    navigate('/addRequest')
+  }
 
   function fetchData(url) {
     const token = localStorage.getItem('token');
@@ -77,7 +83,9 @@ function GetRequests() {
           ))}
         </tbody>
       </table>
+      <button type="button" class="btn btn-primary btn-lg" id="add-button" onClick={submit}>Add</button>
     </div>
+    
           </div>
   );}
 
