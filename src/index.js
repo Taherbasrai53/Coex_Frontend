@@ -12,6 +12,7 @@ import ProfilePage from './pages/profilepage';
 import Login from './pages/login';
 import GetRequests from './pages/getrequest';
 import AddRequest from './pages/addRequest';
+import UpdateRequest from './pages/updaterequest';
 const router =createBrowserRouter([
   {
     path:'/',
@@ -33,6 +34,10 @@ const router =createBrowserRouter([
   {
     path:'/addRequest',
     element:<AddRequest/>
+  },
+  {
+    path:'/updateRequest/:id',
+    element:<UpdateRequest/>
   }
 
 ])

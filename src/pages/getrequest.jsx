@@ -47,7 +47,9 @@ function GetRequests() {
   //   setUrl(encodedValue);
   //   navigate("/updatereq?id=" + String(id));
   // }
-
+function update(s){
+navigate(`/updateRequest/${s}`)
+}
   return (
     <div>
 <NavBar></NavBar>
@@ -55,7 +57,7 @@ function GetRequests() {
       <h2>Request Page</h2>
       <table className={styles.sidingdata}>
         <thead>
-          <tr>
+          <tr onClick={()=>{update("s")}}> 
             <th>S.No</th>
             <th>Siding ID</th>
             <th>Coal Stock</th>
